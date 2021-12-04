@@ -7,20 +7,24 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		9663D9E7275B5F81003098B7 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9663D9E6275B5F80003098B7 /* ContentView.swift */; };
+		9663D9E9275B60C3003098B7 /* MycontentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9663D9E8275B60C3003098B7 /* MycontentView.swift */; };
 		96F2B93D27587CD6007F8626 /* SwiftUI_tutorial_testApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96F2B93C27587CD6007F8626 /* SwiftUI_tutorial_testApp.swift */; };
-		96F2B93F27587CD6007F8626 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96F2B93E27587CD6007F8626 /* ContentView.swift */; };
 		96F2B94127587CD7007F8626 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 96F2B94027587CD7007F8626 /* Assets.xcassets */; };
 		96F2B94427587CD7007F8626 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 96F2B94327587CD7007F8626 /* Preview Assets.xcassets */; };
 		96F2B94B275882E5007F8626 /* MyVStackView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96F2B94A275882E5007F8626 /* MyVStackView.swift */; };
+		96F2B94D275B5132007F8626 /* MytextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96F2B94C275B5132007F8626 /* MytextView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		9663D9E6275B5F80003098B7 /* ContentView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		9663D9E8275B60C3003098B7 /* MycontentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MycontentView.swift; sourceTree = "<group>"; };
 		96F2B93927587CD6007F8626 /* SwiftUI_tutorial_test.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftUI_tutorial_test.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		96F2B93C27587CD6007F8626 /* SwiftUI_tutorial_testApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUI_tutorial_testApp.swift; sourceTree = "<group>"; };
-		96F2B93E27587CD6007F8626 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		96F2B94027587CD7007F8626 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		96F2B94327587CD7007F8626 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		96F2B94A275882E5007F8626 /* MyVStackView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = MyVStackView.swift; path = SwiftUI_tutorial_test/MyVStackView.swift; sourceTree = SOURCE_ROOT; };
+		96F2B94C275B5132007F8626 /* MytextView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = MytextView.swift; path = SwiftUI_tutorial_test/MytextView.swift; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,7 +58,7 @@
 			isa = PBXGroup;
 			children = (
 				96F2B93C27587CD6007F8626 /* SwiftUI_tutorial_testApp.swift */,
-				96F2B93E27587CD6007F8626 /* ContentView.swift */,
+				9663D9E6275B5F80003098B7 /* ContentView.swift */,
 				96F2B94027587CD7007F8626 /* Assets.xcassets */,
 				96F2B94227587CD7007F8626 /* Preview Content */,
 			);
@@ -64,6 +68,8 @@
 		96F2B94227587CD7007F8626 /* Preview Content */ = {
 			isa = PBXGroup;
 			children = (
+				96F2B94C275B5132007F8626 /* MytextView.swift */,
+				9663D9E8275B60C3003098B7 /* MycontentView.swift */,
 				96F2B94A275882E5007F8626 /* MyVStackView.swift */,
 				96F2B94327587CD7007F8626 /* Preview Assets.xcassets */,
 			);
@@ -140,8 +146,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				96F2B93F27587CD6007F8626 /* ContentView.swift in Sources */,
+				96F2B94D275B5132007F8626 /* MytextView.swift in Sources */,
 				96F2B93D27587CD6007F8626 /* SwiftUI_tutorial_testApp.swift in Sources */,
+				9663D9E9275B60C3003098B7 /* MycontentView.swift in Sources */,
+				9663D9E7275B5F81003098B7 /* ContentView.swift in Sources */,
 				96F2B94B275882E5007F8626 /* MyVStackView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

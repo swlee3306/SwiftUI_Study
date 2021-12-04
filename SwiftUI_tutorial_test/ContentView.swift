@@ -8,39 +8,82 @@
 import SwiftUI
 
 /*
+ day 1
  fontWeigt(.bold) : 폰트 굵게
  system(size:20) : 폰트 사이즈 설정
  padding() : 가운데 정렬
  VStack{} : 스택 형식으로 view 를 표현할 수 있는 방식
  HStack{} : 평행하게 view 를 표현할 수 있는 방식
- 
  Preview Content 에서 별도로 View를 관리 할 수 있다.
+ onTapGesture{} : 탭 했을때 나타나는 효과 기능
+ 
+ day 2
+ toggle{} : bool 값을 반전시키는 기능
+ @State : 변수 값이 변화가 되면 다시 처리를 하는 기능
+ withAnimaiton{} : 애니메이션 효과를 통한 자연스로운 움직임 표현
+ NavigationView{} : 이동할 다음 뷰나 효과를 설정하는 기능
+ NavigationLink(destination: 종착지){} : 네비게이션 버튼을 만들어서 해당 기능이 동작 했을 때
+ 동작하는 뷰를 보여준다.
+ 
+ 나머지는 MytextVIew 에 내용정리
+  
+ 
  */
 
 struct ContentView: View {
+    
+    //@State : 변수 값이 변화가 되면 다시 처리를 하는 기능 -> 뷰 적용
+    @State
+    private var isActivated: Bool = false
+    
+    
     var body: some View {
-    VStack {
-        Text("1 안녕하세요 반갑습니다!")
-            .fontWeight(.bold).font(.system(size: 20))
-            .padding()
-        Text("2 안녕하세요 반갑습니다!")
-            .fontWeight(.bold).font(.system(size: 20))
-            .padding()
-        Text("3 안녕하세요 반갑습니다!")
-            .fontWeight(.bold).font(.system(size: 20))
-            .padding()
-        Text("4 안녕하세요 반갑습니다!")
-        .fontWeight(.bold).font(.system(size: 20))
-        .padding()
-            HStack{
-             MyVstack()
-             MyVstack()
-             MyVstack()
-            }.background(Color.red)
-    }.background(Color.yellow)
+        
+        NavigationView{
+            VStack{
+                
+                Spacer()
+                
+                Text("SwiftUI 학습장")
+                    .font(.system(size :40))
+                    .fontWeight(.bold)
+                    .padding()
+                    .background(Color.yellow)
+                    .foregroundColor(Color.white)
+                    .cornerRadius(30)
+                    .padding(.bottom, 50)
+                
+                                
+                NavigationLink(destination: MycontentView()){
+                    Text("Day 1")
+                        .font(.system(size :40))
+                        .fontWeight(.bold)
+                        .padding()
+                        .background(Color.orange)
+                        .foregroundColor(Color.white)
+                        .cornerRadius(30)
+                    
+                }.padding(.bottom, 50)
+                
+                NavigationLink(destination: MyTextView()){
+                    Text("Day 2")
+                        .font(.system(size :40))
+                        .fontWeight(.bold)
+                        .padding()
+                        .background(Color.orange)
+                        .foregroundColor(Color.white)
+                        .cornerRadius(30)
+                    
+                }.padding(.bottom, 50)
+                
+                Spacer()
+            }
+            .frame(minWidth: 0, maxWidth: .infinity, minHeight: 0, maxHeight: .infinity)
+            .background(Color.green)
+            .edgesIgnoringSafeArea(.all)
+        }
     }
 }
-
 
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
