@@ -33,3 +33,15 @@ Day 1 : 뷰의 배치 및 활용 방법고 SwiftUIt 시작
     동작하는 뷰를 보여준다.
  
     나머지는 MytextVIew 에 내용정리
+    
+  Day 3 : binding 기능 및 생성자 내용 정리
+   
+   - 관련 메서드
+    
+     @Binding
+     var isActivated: Bool
+     
+     
+     생성자
+     init(isActivated: Binding<Bool> = .constant(false)){
+     _isActivated = isActivated }
