@@ -26,17 +26,22 @@ import SwiftUI
  동작하는 뷰를 보여준다.
  
  나머지는 MytextVIew 에 내용정리
-  
  
+ day 3
+ // 데이터를 연동시키는 기능
+ @Binding
+ var isActivated: Bool
+ 
+ // 생성자
+ init(isActivated: Binding<Bool> = .constant(false)){
+     _isActivated = isActivated
+ }
+
+ 나머지는 MyBindingFuntion, MyBindingFuntion_Main 에 정리
  */
 
 struct ContentView: View {
-    
-    //@State : 변수 값이 변화가 되면 다시 처리를 하는 기능 -> 뷰 적용
-    @State
-    private var isActivated: Bool = false
-    
-    
+        
     var body: some View {
         
         NavigationView{
@@ -67,6 +72,17 @@ struct ContentView: View {
                 
                 NavigationLink(destination: MyTextView()){
                     Text("Day 2")
+                        .font(.system(size :40))
+                        .fontWeight(.bold)
+                        .padding()
+                        .background(Color.orange)
+                        .foregroundColor(Color.white)
+                        .cornerRadius(30)
+                    
+                }.padding(.bottom, 50)
+                
+                NavigationLink(destination: MyBindingFuntion_Main()){
+                    Text("Day 3")
                         .font(.system(size :40))
                         .fontWeight(.bold)
                         .padding()
