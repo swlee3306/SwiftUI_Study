@@ -50,8 +50,10 @@ Day 1 : 뷰의 배치 및 활용 방법고 SwiftUIt 시작
   
   - 관련 메서드
     
-  // uikit 의 uiview 를 사용할 수 있도록 한다.
+ // uikit 의 uiview 를 사용할 수 있도록 한다.
+ 
  // UIViewControllerRepresentable
+ 
  struct MyWebViewFundamental_web : UIViewRepresentable {
          
      var urlToLoad: String
