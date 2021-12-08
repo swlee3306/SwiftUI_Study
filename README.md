@@ -54,7 +54,7 @@ Day 1 : 뷰의 배치 및 활용 방법고 SwiftUIt 시작
  
  // UIViewControllerRepresentable
  
- struct MyWebViewFundamental_web : UIViewRepresentable {
+     struct MyWebViewFundamental_web : UIViewRepresentable {
          
      var urlToLoad: String
      
