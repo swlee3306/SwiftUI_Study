@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		96267E8E2760CDC20001AB81 /* MyWebViewFundamental.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96267E8D2760CDC20001AB81 /* MyWebViewFundamental.swift */; };
 		962A6309275CB8A700E97FD6 /* MyBindingFuntion.swift in Sources */ = {isa = PBXBuildFile; fileRef = 962A6308275CB8A700E97FD6 /* MyBindingFuntion.swift */; };
 		962A630B275CBA1B00E97FD6 /* MyBindingFuntion_Main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 962A630A275CBA1B00E97FD6 /* MyBindingFuntion_Main.swift */; };
 		9663D9E7275B5F81003098B7 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9663D9E6275B5F80003098B7 /* ContentView.swift */; };
@@ -19,6 +20,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		96267E8D2760CDC20001AB81 /* MyWebViewFundamental.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyWebViewFundamental.swift; sourceTree = "<group>"; };
 		962A6308275CB8A700E97FD6 /* MyBindingFuntion.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyBindingFuntion.swift; sourceTree = "<group>"; };
 		962A630A275CBA1B00E97FD6 /* MyBindingFuntion_Main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyBindingFuntion_Main.swift; sourceTree = "<group>"; };
 		9663D9E6275B5F80003098B7 /* ContentView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -77,6 +79,7 @@
 				96F2B94C275B5132007F8626 /* MytextView.swift */,
 				96F2B94A275882E5007F8626 /* MyVStackView.swift */,
 				9663D9E8275B60C3003098B7 /* MycontentView.swift */,
+				96267E8D2760CDC20001AB81 /* MyWebViewFundamental.swift */,
 				96F2B94327587CD7007F8626 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
@@ -155,6 +158,7 @@
 				96F2B94D275B5132007F8626 /* MytextView.swift in Sources */,
 				962A630B275CBA1B00E97FD6 /* MyBindingFuntion_Main.swift in Sources */,
 				962A6309275CB8A700E97FD6 /* MyBindingFuntion.swift in Sources */,
+				96267E8E2760CDC20001AB81 /* MyWebViewFundamental.swift in Sources */,
 				96F2B93D27587CD6007F8626 /* SwiftUI_tutorial_testApp.swift in Sources */,
 				9663D9E9275B60C3003098B7 /* MycontentView.swift in Sources */,
 				9663D9E7275B5F81003098B7 /* ContentView.swift in Sources */,
@@ -286,12 +290,14 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"SwiftUI_tutorial_test/Preview Content\"";
 				DEVELOPMENT_TEAM = LF92S387VF;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "SwiftUI-tutorial-test-Info.plist";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -315,12 +321,14 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"SwiftUI_tutorial_test/Preview Content\"";
 				DEVELOPMENT_TEAM = LF92S387VF;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "SwiftUI-tutorial-test-Info.plist";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;

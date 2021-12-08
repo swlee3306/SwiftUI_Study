@@ -38,6 +38,39 @@ import SwiftUI
  }
 
  나머지는 MyBindingFuntion, MyBindingFuntion_Main 에 정리
+ 
+ day 4
+ 
+ // uikit 의 uiview 를 사용할 수 있도록 한다.
+ // UIViewControllerRepresentable
+ struct MyWebViewFundamental_web : UIViewRepresentable {
+         
+     var urlToLoad: String
+     
+     // make ui view
+     func makeUIView(context: Context) -> WKWebView {
+         
+         // unwrapping
+         guard let url = URL(string: self.urlToLoad) else {
+             return WKWebView()
+         }
+         
+         // 웹뷰 인스턴스 생성
+         let webview = WKWebView()
+         
+         // 웹뷰를 로드한다.
+         webview.load(URLRequest(url: url))
+         
+         return webview
+         
+     }
+     // update ui view
+     
+     func updateUIView(_ uiView: WKWebView, context: UIViewRepresentableContext<MyWebViewFundamental_web>) {
+     }
+     
+ }
+
  */
 
 struct ContentView: View {
@@ -56,41 +89,52 @@ struct ContentView: View {
                     .background(Color.yellow)
                     .foregroundColor(Color.white)
                     .cornerRadius(30)
-                    .padding(.bottom, 50)
+                    .padding(.bottom, 40
+                    )
                 
-                                
                 NavigationLink(destination: MycontentView()){
                     Text("Day 1")
-                        .font(.system(size :40))
+                        .font(.system(size :30))
                         .fontWeight(.bold)
                         .padding()
                         .background(Color.orange)
                         .foregroundColor(Color.white)
                         .cornerRadius(30)
                     
-                }.padding(.bottom, 50)
+                }.padding(.bottom, 40)
                 
                 NavigationLink(destination: MyTextView()){
                     Text("Day 2")
-                        .font(.system(size :40))
+                        .font(.system(size :30))
                         .fontWeight(.bold)
                         .padding()
                         .background(Color.orange)
                         .foregroundColor(Color.white)
                         .cornerRadius(30)
                     
-                }.padding(.bottom, 50)
+                }.padding(.bottom, 40)
                 
                 NavigationLink(destination: MyBindingFuntion_Main()){
                     Text("Day 3")
-                        .font(.system(size :40))
+                        .font(.system(size :30))
                         .fontWeight(.bold)
                         .padding()
                         .background(Color.orange)
                         .foregroundColor(Color.white)
                         .cornerRadius(30)
                     
-                }.padding(.bottom, 50)
+                }.padding(.bottom, 40)
+                
+                NavigationLink(destination: MyWebViewFundamental()){
+                    Text("Day 4")
+                        .font(.system(size :30))
+                        .fontWeight(.bold)
+                        .padding()
+                        .background(Color.orange)
+                        .foregroundColor(Color.white)
+                        .cornerRadius(30)
+                    
+                }.padding(.bottom, 40)
                 
                 Spacer()
             }
