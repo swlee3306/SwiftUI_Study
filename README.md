@@ -79,4 +79,4 @@ Day 1 : 뷰의 배치 및 활용 방법고 SwiftUIt 시작
      
      func updateUIView(_ uiView: WKWebView, context: UIViewRepresentableContext<MyWebViewFundamental_web>) {
      }
-   }
+     }
