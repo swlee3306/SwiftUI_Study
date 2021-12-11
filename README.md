@@ -80,3 +80,37 @@ Day 1 : 뷰의 배치 및 활용 방법고 SwiftUIt 시작
      func updateUIView(_ uiView: WKWebView, context: UIViewRepresentableContext<MyWebViewFundamental_web>) {
      }
      }
+  
+  Day 5 : Font 관련 기능 내용 정리
+
+   - 관련 메서드
+    
+ .tracking(2)
+ =>글자와 글자 사이의 간격
+ 
+ .font( .system(.body, design:.rounded))
+ => 에플이 지원하는 폰트에 대한 다양한 설정이 가능하다. => .system()
+ => 위 코드는 body 내에 폰트를 rounded 로 적용한다.
+ 
+ .fontWeight(.medium)
+ => 폰트의 굵기를 설정하는 코드
+ 
+ .multilineTextAlignment(.center)
+ => 텍스트의 위치를 설정하는 코드 (default : reading)
+ 
+ .lineLimit(nil)
+ => 보여줄 라인 수 설정 (nil 로 설정시 멀티라인으로 설정가능)
+ 
+ .lineSpacing(10)
+ => 글 사이 간격을 줄수 있는 코드
+ 
+ .truncationMode(.middle)
+ => 글자가 길어질 시 ... 으로 짤리는 위치를 설정할 수 있는 기능
+ 
+ .shadow(color: Color.red ,radius: 4, x: 0, y: 10 )
+ => 글자 그림자 설정, .radius 그림자의 위치 설정
+ 
+ .cornerRadius(20)
+ => 주변 윤각을 곡선으로 설정한다.
+ 
+ 글자와 글자 사이의 간격을 둘시 각각 padding() 을 설정한다.
