@@ -31,8 +31,8 @@ struct MyVstack: View{
                 .fontWeight(.bold).font(.system(size: 20))
                 .padding()
             Text("4!")
-            .fontWeight(.bold).font(.system(size: 20))
-            .padding()
+                .fontWeight(.bold).font(.system(size: 20))
+                .padding()
         }
         .background(self.isActivated ? Color.green : Color.red)
         .padding(self.isActivated ? 10 : 0)

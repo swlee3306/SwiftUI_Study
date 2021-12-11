@@ -57,7 +57,7 @@ struct MyBindingFuntion: View{
                 self.index += 1
             }
         }
-    
+        
     }
     
 }

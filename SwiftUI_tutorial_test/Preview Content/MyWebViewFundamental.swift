@@ -11,7 +11,7 @@ import WebKit
 // uikit 의 uiview 를 사용할 수 있도록 한다.
 // UIViewControllerRepresentable
 struct MyWebViewFundamental_web : UIViewRepresentable {
-        
+    
     var urlToLoad: String
     
     // make ui view
@@ -41,7 +41,7 @@ struct MyWebViewFundamental_web : UIViewRepresentable {
 struct MyWebViewFundamental: View {
     
     var body: some View{
-     
+        
         HStack{
             NavigationLink(destination:     MyWebViewFundamental_web(urlToLoad: "https://www.naver.com").edgesIgnoringSafeArea(.all)){
                 Text("Naver")

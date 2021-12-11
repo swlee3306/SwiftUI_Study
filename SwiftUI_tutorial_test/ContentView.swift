@@ -34,9 +34,9 @@ import SwiftUI
  
  // 생성자
  init(isActivated: Binding<Bool> = .constant(false)){
-     _isActivated = isActivated
+ _isActivated = isActivated
  }
-
+ 
  나머지는 MyBindingFuntion, MyBindingFuntion_Main 에 정리
  
  day 4
@@ -44,43 +44,47 @@ import SwiftUI
  // uikit 의 uiview 를 사용할 수 있도록 한다.
  // UIViewControllerRepresentable
  struct MyWebViewFundamental_web : UIViewRepresentable {
-         
-     var urlToLoad: String
-     
-     // make ui view
-     func makeUIView(context: Context) -> WKWebView {
-         
-         // unwrapping
-         guard let url = URL(string: self.urlToLoad) else {
-             return WKWebView()
-         }
-         
-         // 웹뷰 인스턴스 생성
-         let webview = WKWebView()
-         
-         // 웹뷰를 로드한다.
-         webview.load(URLRequest(url: url))
-         
-         return webview
-         
-     }
-     // update ui view
-     
-     func updateUIView(_ uiView: WKWebView, context: UIViewRepresentableContext<MyWebViewFundamental_web>) {
-     }
-     
+ 
+ var urlToLoad: String
+ 
+ // make ui view
+ func makeUIView(context: Context) -> WKWebView {
+ 
+ // unwrapping
+ guard let url = URL(string: self.urlToLoad) else {
+ return WKWebView()
  }
-
+ 
+ // 웹뷰 인스턴스 생성
+ let webview = WKWebView()
+ 
+ // 웹뷰를 로드한다.
+ webview.load(URLRequest(url: url))
+ 
+ return webview
+ 
+ }
+ // update ui view
+ 
+ func updateUIView(_ uiView: WKWebView, context: UIViewRepresentableContext<MyWebViewFundamental_web>) {
+ }
+ 
+ }
+ 
+ day 5
+ Font 관련 기능 내용 정리
+ - 세부 내용은 MyFontTest.swift 파일 확인.
+ 
+ 
  */
 
 struct ContentView: View {
-        
+    
     var body: some View {
         
         NavigationView{
+            
             VStack{
-                
-                Spacer()
                 
                 Text("SwiftUI 학습장")
                     .font(.system(size :40))
@@ -89,58 +93,113 @@ struct ContentView: View {
                     .background(Color.yellow)
                     .foregroundColor(Color.white)
                     .cornerRadius(30)
-                    .padding(.bottom, 40
-                    )
-                
-                NavigationLink(destination: MycontentView()){
-                    Text("Day 1")
-                        .font(.system(size :30))
-                        .fontWeight(.bold)
-                        .padding()
-                        .background(Color.orange)
-                        .foregroundColor(Color.white)
-                        .cornerRadius(30)
+                    .padding(.top , 100)
+                HStack{
+                    VStack{
+                        
+                        Spacer()
+                        
+                        NavigationLink(destination: MycontentView()){
+                            Text("Day 1")
+                                .font(.system(size :30))
+                                .fontWeight(.bold)
+                                .padding()
+                                .background(Color.orange)
+                                .foregroundColor(Color.white)
+                                .cornerRadius(30)
+                            
+                        }.padding(.bottom, 40)
+                        
+                        NavigationLink(destination: MyTextView()){
+                            Text("Day 2")
+                                .font(.system(size :30))
+                                .fontWeight(.bold)
+                                .padding()
+                                .background(Color.orange)
+                                .foregroundColor(Color.white)
+                                .cornerRadius(30)
+                            
+                        }.padding(.bottom, 40)
+                        
+                        NavigationLink(destination: MyBindingFuntion_Main()){
+                            Text("Day 3")
+                                .font(.system(size :30))
+                                .fontWeight(.bold)
+                                .padding()
+                                .background(Color.orange)
+                                .foregroundColor(Color.white)
+                                .cornerRadius(30)
+                            
+                        }.padding(.bottom, 40)
+                        
+                        NavigationLink(destination: MyWebViewFundamental()){
+                            Text("Day 4")
+                                .font(.system(size :30))
+                                .fontWeight(.bold)
+                                .padding()
+                                .background(Color.orange)
+                                .foregroundColor(Color.white)
+                                .cornerRadius(30)
+                            
+                        }.padding(.bottom, 40)
+                        
+                        Spacer()
+                    }
                     
-                }.padding(.bottom, 40)
-                
-                NavigationLink(destination: MyTextView()){
-                    Text("Day 2")
-                        .font(.system(size :30))
-                        .fontWeight(.bold)
-                        .padding()
-                        .background(Color.orange)
-                        .foregroundColor(Color.white)
-                        .cornerRadius(30)
                     
-                }.padding(.bottom, 40)
-                
-                NavigationLink(destination: MyBindingFuntion_Main()){
-                    Text("Day 3")
-                        .font(.system(size :30))
-                        .fontWeight(.bold)
-                        .padding()
-                        .background(Color.orange)
-                        .foregroundColor(Color.white)
-                        .cornerRadius(30)
+                    VStack{
+                        
+                        NavigationLink(destination: MyFontTest()){
+                            Text("Day 5")
+                                .font(.system(size :30))
+                                .fontWeight(.bold)
+                                .padding()
+                                .background(Color.orange)
+                                .foregroundColor(Color.white)
+                                .cornerRadius(30)
+                            
+                        }.padding(.bottom, 40)
+                        
+                        NavigationLink(destination: MycontentView()){
+                            Text("Day 6")
+                                .font(.system(size :30))
+                                .fontWeight(.bold)
+                                .padding()
+                                .background(Color.orange)
+                                .foregroundColor(Color.white)
+                                .cornerRadius(30)
+                            
+                        }.padding(.bottom, 40)
+                        
+                        NavigationLink(destination: MycontentView()){
+                            Text("Day 7")
+                                .font(.system(size :30))
+                                .fontWeight(.bold)
+                                .padding()
+                                .background(Color.orange)
+                                .foregroundColor(Color.white)
+                                .cornerRadius(30)
+                            
+                        }.padding(.bottom, 40)
+                        
+                        NavigationLink(destination: MycontentView()){
+                            Text("Day 8")
+                                .font(.system(size :30))
+                                .fontWeight(.bold)
+                                .padding()
+                                .background(Color.orange)
+                                .foregroundColor(Color.white)
+                                .cornerRadius(30)
+                            
+                        }.padding(.bottom, 40)
+                        
+                    }
                     
-                }.padding(.bottom, 40)
-                
-                NavigationLink(destination: MyWebViewFundamental()){
-                    Text("Day 4")
-                        .font(.system(size :30))
-                        .fontWeight(.bold)
-                        .padding()
-                        .background(Color.orange)
-                        .foregroundColor(Color.white)
-                        .cornerRadius(30)
-                    
-                }.padding(.bottom, 40)
-                
-                Spacer()
-            }
-            .frame(minWidth: 0, maxWidth: .infinity, minHeight: 0, maxHeight: .infinity)
-            .background(Color.green)
-            .edgesIgnoringSafeArea(.all)
+                }
+            }.frame(minWidth: 0, maxWidth: .infinity, minHeight: 0, maxHeight: .infinity)
+                .background(Color.green)
+                .edgesIgnoringSafeArea(.all)
+            
         }
     }
 }

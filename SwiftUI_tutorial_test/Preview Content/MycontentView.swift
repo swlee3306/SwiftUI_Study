@@ -9,7 +9,7 @@ import SwiftUI
 
 
 struct MycontentView: View {
-
+    
     //@State : 변수 값이 변화가 되면 다시 처리를 하는 기능 -> 뷰 적용
     @State
     private var isActivated: Bool = false
