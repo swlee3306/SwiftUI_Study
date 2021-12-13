@@ -114,3 +114,27 @@ Day 1 : 뷰의 배치 및 활용 방법고 SwiftUIt 시작
  => 주변 윤각을 곡선으로 설정한다.
  
  글자와 글자 사이의 간격을 둘시 각각 padding() 을 설정한다.
+  
+Day 6 :  Image 관련 기능 내용 정리
+
+   - 관련 메서드
+    
+ Image(): A view that displays an image.
+ 
+ resizable(): The window can be resized by the user.
+ 
+ scaledToFill(): The option to scale the content to fit the size of itself by changing the aspect ratio of the content if necessary.
+ 
+ frame(): Positions this view within an invisible frame.
+ 
+ clipShape(): Sets a clipping shape for this view.
+ 
+ Overlay(): A mode that either multiplies or screens the source image samples with the background image samples, depending on the background color.
+ 
+ opacity(): Sets the transparency of this view.
+ 
+ stroke(): Traces the outline of this shape with a color or gradient.
+ 
+ aspectRatio(): Constrains this view’s dimensions to the specified aspect ratio.
+ 
+ clipped(): Clips this view to its bounding rectangular frame.
