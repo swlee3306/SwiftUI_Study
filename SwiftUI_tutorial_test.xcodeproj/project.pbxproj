@@ -12,7 +12,9 @@
 		962A630B275CBA1B00E97FD6 /* MyBindingFuntion_Main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 962A630A275CBA1B00E97FD6 /* MyBindingFuntion_Main.swift */; };
 		9663D9E7275B5F81003098B7 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9663D9E6275B5F80003098B7 /* ContentView.swift */; };
 		9663D9E9275B60C3003098B7 /* MycontentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9663D9E8275B60C3003098B7 /* MycontentView.swift */; };
+		96B5CC8D2767860600AD52DC /* MyImage_View.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96B5CC8C2767860600AD52DC /* MyImage_View.swift */; };
 		96DA102927646DC700B391AA /*  MyFontTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96DA102827646DC700B391AA /*  MyFontTest.swift */; };
+		96DA102B2764773F00B391AA /* Image_Tutorial.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96DA102A2764773F00B391AA /* Image_Tutorial.swift */; };
 		96F2B93D27587CD6007F8626 /* SwiftUI_tutorial_testApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96F2B93C27587CD6007F8626 /* SwiftUI_tutorial_testApp.swift */; };
 		96F2B94127587CD7007F8626 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 96F2B94027587CD7007F8626 /* Assets.xcassets */; };
 		96F2B94427587CD7007F8626 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 96F2B94327587CD7007F8626 /* Preview Assets.xcassets */; };
@@ -26,7 +28,9 @@
 		962A630A275CBA1B00E97FD6 /* MyBindingFuntion_Main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyBindingFuntion_Main.swift; sourceTree = "<group>"; };
 		9663D9E6275B5F80003098B7 /* ContentView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		9663D9E8275B60C3003098B7 /* MycontentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MycontentView.swift; sourceTree = "<group>"; };
+		96B5CC8C2767860600AD52DC /* MyImage_View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyImage_View.swift; sourceTree = "<group>"; };
 		96DA102827646DC700B391AA /*  MyFontTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = " MyFontTest.swift"; sourceTree = "<group>"; };
+		96DA102A2764773F00B391AA /* Image_Tutorial.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Image_Tutorial.swift; sourceTree = "<group>"; };
 		96F2B93927587CD6007F8626 /* SwiftUI_tutorial_test.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftUI_tutorial_test.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		96F2B93C27587CD6007F8626 /* SwiftUI_tutorial_testApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUI_tutorial_testApp.swift; sourceTree = "<group>"; };
 		96F2B94027587CD7007F8626 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -83,6 +87,8 @@
 				9663D9E8275B60C3003098B7 /* MycontentView.swift */,
 				96267E8D2760CDC20001AB81 /* MyWebViewFundamental.swift */,
 				96DA102827646DC700B391AA /*  MyFontTest.swift */,
+				96DA102A2764773F00B391AA /* Image_Tutorial.swift */,
+				96B5CC8C2767860600AD52DC /* MyImage_View.swift */,
 				96F2B94327587CD7007F8626 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
@@ -164,7 +170,9 @@
 				96DA102927646DC700B391AA /*  MyFontTest.swift in Sources */,
 				96267E8E2760CDC20001AB81 /* MyWebViewFundamental.swift in Sources */,
 				96F2B93D27587CD6007F8626 /* SwiftUI_tutorial_testApp.swift in Sources */,
+				96B5CC8D2767860600AD52DC /* MyImage_View.swift in Sources */,
 				9663D9E9275B60C3003098B7 /* MycontentView.swift in Sources */,
+				96DA102B2764773F00B391AA /* Image_Tutorial.swift in Sources */,
 				9663D9E7275B5F81003098B7 /* ContentView.swift in Sources */,
 				96F2B94B275882E5007F8626 /* MyVStackView.swift in Sources */,
 			);
