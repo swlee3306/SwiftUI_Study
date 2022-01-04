@@ -1,7 +1,7 @@
 # SwiftUI_Study
 출처 : 개발하는 정대리 SwiftUI 강좌
 
-Day 1 : 뷰의 배치 및 활용 방법고 SwiftUIt 시작
+**Day 1 : 뷰의 배치 및 활용 방법고 SwiftUIt 시작**
   
   - 관련 메서드 
  
@@ -17,7 +17,7 @@ Day 1 : 뷰의 배치 및 활용 방법고 SwiftUIt 시작
  
     Preview Content 에서 별도로 View를 관리 할 수 있다.
  
- Day 2 : 애니메이셔 및 토글, 제스처 기능정리
+ **Day 2 : 애니메이셔 및 토글, 제스처 기능정리**
  
   - 관련 메서드
  
@@ -34,7 +34,7 @@ Day 1 : 뷰의 배치 및 활용 방법고 SwiftUIt 시작
  
     나머지는 MytextVIew 에 내용정리
     
-  Day 3 : binding 기능 및 생성자 내용 정리
+  **Day 3 : binding 기능 및 생성자 내용 정리**
    
    - 관련 메서드
     
@@ -46,7 +46,7 @@ Day 1 : 뷰의 배치 및 활용 방법고 SwiftUIt 시작
      init(isActivated: Binding<Bool> = .constant(false)){
      _isActivated = isActivated }
   
-  Day 4 : 웹뷰 기능 정리
+  **Day 4 : 웹뷰 기능 정리**
   
   - 관련 메서드
     
@@ -81,7 +81,7 @@ Day 1 : 뷰의 배치 및 활용 방법고 SwiftUIt 시작
      }
      }
   
-  Day 5 : Font 관련 기능 내용 정리
+  **Day 5 : Font 관련 기능 내용 정리**
 
    - 관련 메서드
     
@@ -115,7 +115,7 @@ Day 1 : 뷰의 배치 및 활용 방법고 SwiftUIt 시작
  
  글자와 글자 사이의 간격을 둘시 각각 padding() 을 설정한다.
   
-Day 6 :  Image 관련 기능 내용 정리
+**Day 6 :  Image 관련 기능 내용 정리**
 
    - 관련 메서드
     
@@ -139,7 +139,7 @@ Day 6 :  Image 관련 기능 내용 정리
  
  clipped(): Clips this view to its bounding rectangular frame.
 
-Day 7 : Stack 관련 기능 내용 정리
+**Day 7 : Stack 관련 기능 내용 정리**
    
    Stack
     
