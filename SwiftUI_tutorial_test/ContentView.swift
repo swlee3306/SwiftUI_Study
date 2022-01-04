@@ -78,6 +78,10 @@ import SwiftUI
  day 6
  Image 관련 기능 내용 정리
  - 세부 내용은 Image_Tutorial 및 MyImage_View Swift 파일 확인
+ 
+ day 6
+ Stack 관련 기능 내용 정리
+ - 세부 내용은 MyStack_View Swift 파일 확인
  */
 
 struct ContentView: View {
@@ -173,7 +177,7 @@ struct ContentView: View {
                             
                         }.padding(.bottom, 40)
                         
-                        NavigationLink(destination: MycontentView()){
+                        NavigationLink(destination: MyStack_View()){
                             Text("Day 7")
                                 .font(.system(size :30))
                                 .fontWeight(.bold)

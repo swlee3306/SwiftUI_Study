@@ -12,6 +12,7 @@
 		962A630B275CBA1B00E97FD6 /* MyBindingFuntion_Main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 962A630A275CBA1B00E97FD6 /* MyBindingFuntion_Main.swift */; };
 		9663D9E7275B5F81003098B7 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9663D9E6275B5F80003098B7 /* ContentView.swift */; };
 		9663D9E9275B60C3003098B7 /* MycontentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9663D9E8275B60C3003098B7 /* MycontentView.swift */; };
+		969B3E7D27848F64004BC765 /* MyStack_View.swift in Sources */ = {isa = PBXBuildFile; fileRef = 969B3E7C27848F64004BC765 /* MyStack_View.swift */; };
 		96B5CC8D2767860600AD52DC /* MyImage_View.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96B5CC8C2767860600AD52DC /* MyImage_View.swift */; };
 		96DA102927646DC700B391AA /*  MyFontTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96DA102827646DC700B391AA /*  MyFontTest.swift */; };
 		96DA102B2764773F00B391AA /* Image_Tutorial.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96DA102A2764773F00B391AA /* Image_Tutorial.swift */; };
@@ -28,6 +29,7 @@
 		962A630A275CBA1B00E97FD6 /* MyBindingFuntion_Main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyBindingFuntion_Main.swift; sourceTree = "<group>"; };
 		9663D9E6275B5F80003098B7 /* ContentView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		9663D9E8275B60C3003098B7 /* MycontentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MycontentView.swift; sourceTree = "<group>"; };
+		969B3E7C27848F64004BC765 /* MyStack_View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyStack_View.swift; sourceTree = "<group>"; };
 		96B5CC8C2767860600AD52DC /* MyImage_View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyImage_View.swift; sourceTree = "<group>"; };
 		96DA102827646DC700B391AA /*  MyFontTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = " MyFontTest.swift"; sourceTree = "<group>"; };
 		96DA102A2764773F00B391AA /* Image_Tutorial.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Image_Tutorial.swift; sourceTree = "<group>"; };
@@ -89,6 +91,7 @@
 				96DA102827646DC700B391AA /*  MyFontTest.swift */,
 				96DA102A2764773F00B391AA /* Image_Tutorial.swift */,
 				96B5CC8C2767860600AD52DC /* MyImage_View.swift */,
+				969B3E7C27848F64004BC765 /* MyStack_View.swift */,
 				96F2B94327587CD7007F8626 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
@@ -171,6 +174,7 @@
 				96267E8E2760CDC20001AB81 /* MyWebViewFundamental.swift in Sources */,
 				96F2B93D27587CD6007F8626 /* SwiftUI_tutorial_testApp.swift in Sources */,
 				96B5CC8D2767860600AD52DC /* MyImage_View.swift in Sources */,
+				969B3E7D27848F64004BC765 /* MyStack_View.swift in Sources */,
 				9663D9E9275B60C3003098B7 /* MycontentView.swift in Sources */,
 				96DA102B2764773F00B391AA /* Image_Tutorial.swift in Sources */,
 				9663D9E7275B5F81003098B7 /* ContentView.swift in Sources */,
